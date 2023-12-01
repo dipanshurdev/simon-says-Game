@@ -1,0 +1,83 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.colorCard {
+  height: 200px;
+  width: 200px;
+}
+
+.cardWrapper {
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+}
+
+.startButton {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.score {
+  color: aliceblue;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 50px;
+  line-height: 100px;
+}
+
+.flash.flash{
+  border: 3px solid white;
+  border-radius:5px ;
+  box-sizing: border-box;
+}
+
+.red {
+  background-color: red;
+  &.flash{
+background-color: tomato;
+  }
+}
+.green {
+  background-color: green;
+  &.flash{
+    background-color: lightgreen;
+  }
+}
+.blue {
+  background-color: darkblue;
+  &.flash{
+    background-color: blue;
+  }
+}
+.yellow {
+  background-color: gold;
+  &.flash{
+    background-color:yellow;
+  }
+}
+
+.lost{
+  position:absolute;
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  border-radius: 50%;
+  line-height: 100px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+flex-direction: column;
+color: aliceblue;
+}
